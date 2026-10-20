@@ -2,7 +2,7 @@
 
 **Project Coordination • Business & Operations Analysis • Applied AI Research • FPGA Verification**
 
-Sacramento, California | [Email — add preferred professional address] | [LinkedIn — add URL] | [Resume — add PDF]
+Sacramento, California | [mangalbagnalia19@gmail.com](mailto:mangalbagnalia19@gmail.com) | [LinkedIn](https://www.linkedin.com/in/mangal-singh-19bb9731) | [Resume — add PDF]
 
 ## Professional profile
 Business and technology professional with BBA and MBA education and experience supporting administrative operations, coordinating work, and developing independent applied-AI and digital hardware research projects. Interested in project management, technical project coordination, business analysis, operations analysis, and technology-focused positions.
@@ -58,7 +58,7 @@ Customer-facing and logistics-related gig work; include only if relevant to the 
 
 ## Resume and contact
 - [Download resume](resume/README.md) — replace with your final resume PDF.
-- Email: [add preferred professional address]
-- LinkedIn: [add profile URL]
+- Email: [mangalbagnalia19@gmail.com](mailto:mangalbagnalia19@gmail.com)
+- LinkedIn: [Mangal Singh](https://www.linkedin.com/in/mangal-singh-19bb9731)
 
 > Portfolio descriptions are intentionally conservative. Proprietary source code, personal records, secrets, and unpublished patent-sensitive details are excluded.
