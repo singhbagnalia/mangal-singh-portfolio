@@ -1,10 +1,17 @@
-# Publishing your job application portfolio
+# Safe publication workflow
 
-1. Review `README.md` and `index.html` for accuracy; replace contact placeholders and add verified dates and education institutions.
-2. Add a sanitized resume PDF to `resume/` and link it in both the README and website.
-3. Add public-safe project evidence (screenshots, redacted test summaries, and architecture diagrams). Never upload private RTL, credentials, confidential research, identity documents, or unfiled patent-sensitive details.
-4. Create a GitHub repository named `mangal-singh-portfolio` and upload the contents of this folder (not the enclosing ZIP).
-5. Under Settings → Pages, select Deploy from a branch, `main`, `/ (root)` and save.
-6. Use the GitHub Pages URL on job applications and LinkedIn after checking that the website renders correctly.
+1. Keep private engineering files outside this public checkout.
+2. Read SECURITY.md and review the exact staged file list and diff.
+3. Run `python3 .github/scripts/upload_guard.py --staged` before committing;
+   run it without --staged to check the entire Git index before pushing.
+4. Run a redacted full-history Gitleaks scan. Never test with a real secret.
+5. Obtain owner approval before committing or pushing; use a separate branch
+   and pull request. Wait for the publication-guard check and human review.
+6. Merge only after explicit owner approval and verified main protection.
+7. Publish GitHub Pages from the approved main branch/root only. Verify the
+   live site after the deployment. Branch-source Pages must not serve private
+   content, and a failing post-upload CI check cannot undo public disclosure.
 
-**Suggested next improvements:** verified employment dates and outcomes, project screenshots, resume, LinkedIn URL, and a 60-second demo video.
+The proposed local hook requires separate approval to enable:
+`git config --local core.hooksPath .githooks`
+GitHub web uploads bypass this hook; .gitignore does not block them.
